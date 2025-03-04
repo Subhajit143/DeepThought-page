@@ -1,0 +1,389 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8f8f8;
+    padding: 15px 30px;
+}
+
+.logo {
+    width: 200px;
+    
+}
+
+.icon-container {
+    display: flex;
+    gap: 15px;
+    
+    /* padding: 20px; */
+    justify-content: center;
+}
+.icon-container i {
+    padding: 6px;
+    color: white;
+    background: #347CEB;
+    font-size: 14px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Header Styles */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #F0F0F0;
+    padding: 15px 30px;
+    border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    width: 200px;
+  }
+  
+  .icon-container {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  .icon-container i {
+    padding: 8px;
+    color: white;
+    background: #347ceb;
+    font-size: 14px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .icon-container i:hover {
+    background: #2862b3;
+  }
+  
+
+
+
+
+  /* Container and Sidebar Styles */
+  
+  .container {
+    display: flex;
+    flex: 1;
+    position: relative;
+  }
+  
+  :root {
+    --base-clr: #11121a;
+    --line-clr: #42434a;
+    --hover-clr: #222533;
+    --text-clr: #e6e6ef;
+    --accent-clr: #5e63ff;
+    --secondary-text-clr: #b0b3c1;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .logo{
+    color: white;
+  }
+  
+  
+  
+  #sidebar {
+    box-sizing: border-box;
+    height: 30%;
+    width: 300px;
+    /* padding: 5px 1em; */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    /* border: 1px solid var(--line-clr); */
+    position: fixed;
+    /* top: ; */
+    bottom: 63%;
+    border-radius: 10px;
+    align-self: start;
+    transition: width 300ms ease-in-out, padding 300ms ease-in-out;
+    overflow: hidden;
+    text-wrap: nowrap;
+  }
+  
+  #sidebar.close {
+    /* padding: 10px; */
+    width: 90px;
+  }
+  
+  #sidebar.close .data-cont   {
+    display: none; /* Hide the content when sidebar is closed */
+  }
+
+  #sidebar.close .h2-cont   {
+    display: none; /* Hide the content when sidebar is closed */
+  }
+  
+  #sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #sidebar > ul > li:first-child {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 16px;
+  }
+  
+  #sidebar ul li.active a {
+    color: var(--accent-clr);
+  }
+  
+  #sidebar ul li.active a svg {
+    fill: var(--accent-clr);
+  }
+  
+  .cont {
+    background: black;
+  }
+  
+  .data-cont {
+    background: white !important;
+    padding: 10px;
+    transition: opacity 300ms ease-in-out;
+    padding-bottom: 200px;
+    z-index: 3000;
+  }
+  
+  #toggle-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #toggle-btn i {
+    fill: var(--text-clr);
+    transition: transform 300ms ease-in-out;
+  }
+  
+  #sidebar.close #toggle-btn i {
+    transform: rotate(180deg);
+  }
+
+  #sidebar i{
+    flex-shrink: 0;
+    fill: var(--text-clr);
+  }
+  #toggle-btn{
+    margin-left: auto;
+    padding: 1em;
+    border: none;
+    border-radius: .5em;
+    background: none;
+    cursor: pointer;
+  
+    svg{
+      transition: rotate 150ms ease;
+    }
+  }
+  
+  
+  /* Task and Asset Styles */
+  .main-head{
+    display: flex;
+    flex-direction: column;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+    
+    font-size: 18px;
+    border-radius: 5px;
+  }
+
+  .first-comp{
+    display: flex;
+    justify-content: space-between;
+    color: #3100F8;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    width: 100%;
+    
+    /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); */
+  }
+  .first-comp h3{
+    font-weight: bold;
+    font-size: 25px;
+  }
+
+  .firstcmp-btn{
+    background: #3100F8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+.task {
+  
+  padding: 20px;
+  /* margin-bottom: 20px; */
+  
+}
+
+.task h4 {
+  background:#E9ECEF ;
+ padding-left: 22px;
+  padding-right: 22px;
+  padding-bottom: 10px;
+  padding-top: 22px;
+  
+}
+
+.task p {
+  background:#E9ECEF ;
+  margin-bottom: 15px;
+  color: #333;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-bottom: 22px;
+  font-size: 16px;
+}
+
+.assets {
+  padding-top: 30px;
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(2,1fr);
+  margin-bottom: 10px;
+  border-radius: 8px;
+  /* border: 1px solid #ddd; */
+  
+}
+.asset{
+  
+  border-radius: 15px;
+  border: 1px solid #f1f0f0;
+  height: 350px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.asset h3 {
+  /* position: relative;  */
+  margin-bottom: 10px;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: black;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-weight: 300;
+  z-index: 10;
+  border-top-left-radius: 15px; /* Top-left corner */
+  border-top-right-radius: 15px; /* Top-right corner */
+}
+
+.asset h3 i {
+  position: absolute; /* Position the icon absolutely */
+  right: 10px; /* Adjust the distance from the right edge */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust for perfect vertical centering */
+  font-size: 18px; /* Adjust icon size */
+  color: white; /* Icon color */
+  cursor: pointer; /* Add pointer cursor for better UX */
+}
+
+.asset p {
+  margin-bottom: 10px;
+  color: #555;
+  padding: 4px;
+  background: none;
+
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+iframe {
+  width: 100%;
+  padding-bottom: 4px;
+  border: none;
+  border-radius: 8px;
+  height: fit-content;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+
+  /* Main Content Styles */
+  main {
+    flex: 1;
+   
+    overflow-y: auto;
+    background: #f8f8f8;
+  }

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deep Thoughts</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <script type="text/javascript" src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div>
+        <img
+          src="https://deepthought.education/assets/images/logo/logo.svg"
+          alt="DT_LOGO"
+          class="logo"
+        />
+      </div>
+
+      <div class="icon-container">
+        <i class="fa-solid fa-house"></i> <!-- Home Icon -->
+        <i class="fa-solid fa-gear"></i> <!-- Settings Icon -->
+        <i class="fa-solid fa-bell"></i> <!-- Notification Icon -->
+        <i class="fa-solid fa-user" style="color: white; background: rgba(168, 168, 168, 0.788);"></i> <!-- Profile picture icon -->
+        <i
+          style="color: #347ceb; background: none"
+          class="fa-solid fa-ellipsis-vertical"
+        ></i>
+        
+        <!-- Vertical Three Dots -->
+      </div>
+    </header>
+
+    <div class="container">
+      <!-- Sidebar -->
+      <nav id="sidebar">
+        <ul class="cont">
+          <li class="logo-cont">
+            <button onclick="toggleSidebar()" id="toggle-btn">
+              <h2 class="h2-cont" style=" left: 10px;
+               
+              transform: translatex(-50%); 
+              font-size: 18px; 
+              color: white; 
+              cursor: pointer; ">Journey Board</h2>
+              <i class="fa-solid fa-arrow-left" style="color: aliceblue;"></i>
+            </button>
+          </li>
+          <li class="data-cont">
+            <ul>
+              <li><strong>Explore the world of management</strong></li>
+              <br>
+              <li>- Technical Project Management</li>
+              <li>- Threadbuild</li>
+              <li>- Structure your pointers</li>
+              <li>- 4SA Method</li>
+            </ul></li>
+        </ul>
+      </nav>
+
+      <!-- Main Content -->
+      <main>
+        <div class="main-head">
+          <div class="first-comp">
+            <h3>Technical Project Management</h3>
+            <button class="firstcmp-btn">Submit Task</button>
+          </div>
+
+          <div id="task-container">
+            <!-- Tasks will be rendered here by JavaScript -->
+          </div>
+        </div>
+
+        <div class="notifi-comp" style="display: flex;
+        justify-content: end; margin-top: -220px; position: sticky;">
+          <div class="notifi-icon" style="display: flex; flex-direction: column; gap:15px; padding-right:20px ;">
+            <div><i class="fa-solid fa-question" style="font-size: 20px; background: #3100F8; padding-top: 15px; padding-bottom: 15px; padding-left: 19px; padding-right: 19px; border-radius: 50%; color: white;"></i></div>
+            <div><i class="fa-solid fa-people-group"  style="background: #3100F8; padding-right: 15px; padding-left: 15px; padding-top: 17px; padding-bottom: 17px; border-radius: 50%; color: white;"></i> <!-- Meeting icon --></div>
+            <div><i class="fa-solid fa-calendar"  style="font-size: 17px; background: #3100F8; padding-right: 17px; padding-left: 17px; padding-top: 17.5px; padding-bottom: 17.5px; border-radius: 50%; color: white;" ></i> <!-- Simple calendar icon --> <!-- Users icon --></div>
+          </div>
+        </div>
+      </main>
+
+      
+    </div>
+
+    
+  </body>
+</html>
